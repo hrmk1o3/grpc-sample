@@ -1,4 +1,4 @@
-# GRPC Sample
+# gRPC Sample
 
 ## Setup
 
