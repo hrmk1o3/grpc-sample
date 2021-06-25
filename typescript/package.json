@@ -1,0 +1,28 @@
+{
+  "name": "grpc-ts-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "./scripts/build-protos.sh && npx tsc",
+    "setup": "./scripts/build-protos.sh",
+    "build": "npx tsc",
+    "start": "node ./dist/server.js",
+    "client": "node ./dist/client.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.1.0",
+    "@grpc/proto-loader": "^0.5.0",
+    "async": "^1.5.2",
+    "google-protobuf": "^3.0.0",
+    "grpc": "^1.24.10",
+    "lodash": "^4.6.1",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.1",
+    "grpc-tools": "^1.11.2",
+    "grpc_tools_node_protoc_ts": "^5.3.0",
+    "typescript": "^4.3.4"
+  }
+}
